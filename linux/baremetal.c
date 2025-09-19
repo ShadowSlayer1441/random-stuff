@@ -36,5 +36,5 @@ void _start(void)
     const char hwText[] = "Hello world!\n";
 
     sys_write(1, hwText, sizeof(hwText));
-    sys_exit(12);
+    sys_exit(0);
 }

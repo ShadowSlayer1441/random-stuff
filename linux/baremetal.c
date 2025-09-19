@@ -1,6 +1,6 @@
 /* 64 bit linux. */
 
-# Credit:https://stackoverflow.com/questions/2572988/what-can-you-do-in-c-without-std-includes-are-they-part-of-c-or-just-libra
+// Credit:https://stackoverflow.com/questions/2572988/what-can-you-do-in-c-without-std-includes-are-they-part-of-c-or-just-libra
 
 #define SYSCALL_EXIT 60
 #define SYSCALL_WRITE 1

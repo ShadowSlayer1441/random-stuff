@@ -1,0 +1,3 @@
+echo "install bluetooth /sbin/modprobe --ignore-install bluetooth" >> "./test"
+echo "install btusb /sbin/modprobe --ignore-install btusb" >> "./test"
+chmod 644

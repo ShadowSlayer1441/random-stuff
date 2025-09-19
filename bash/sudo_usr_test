@@ -1,0 +1,3 @@
+run0 /var/home/pauls/Desktop/development/bash/test
+echo $SUDO_USER
+echo $USER

@@ -1,2 +1,5 @@
 paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
 systemd-analyze security   | grep -Ff <( systemctl list-units --type=service --state=running --no-legend --no-pager | awk '{print $1}') | sort -k2 -nr
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=optimized.pdf input.pdf
+objdump -x -D "$(cat /proc/cmdline | cut -f1 -d ' ' | cut -f2 -d')' | cat <(echo -n "/boot") -)" | cut -f 3 | cut -f1 -d' ' | sort | uniq -c | sort -n -r | head
+rpm-ostree override replace https://koji.fedoraproject.org/koji/buildinfo?buildID=2788336 --remove iwlwifi-mld-firmware

@@ -5,3 +5,6 @@ Github_signingtests/
 Shadow-secureblue/
 #cargo automatically add git repos, recursive git repos are cancer
 rust/
+linux/
+objdumps/
+wrkfarm_pico/
